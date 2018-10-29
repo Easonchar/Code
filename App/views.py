@@ -7,20 +7,20 @@ def index(request):
 
 
 def detail(request):
-    return None
+    return render(request,'detail.html')
 
 
 def list(request):
-    return None
+    return render(request,'list.html')
 
 
 def login(request):
-    return None
+    return render(request,'login.html')
 
 
 def register(request):
-    return None
+    return render(request,'register.html')
 
 
 def shoppingCar(request):
-    return None
+    return render(request,'shoppingCar.html')
