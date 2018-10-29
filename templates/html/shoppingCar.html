@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}" ></script>
 		<style>
 			*{margin: 0; padding: 0; border: none;}
 			input{outline: none;font-size: 16px;}
@@ -112,8 +113,8 @@
 				
 			}
 		</style>
-		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
-		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
 		<script>
 			$(function(){
 //				var arr = $.cookie("cart");
@@ -343,7 +344,7 @@
 	</head>
 	<body>
 		<div id="shoppingcar_top">
-			<img src="../img/shoppingCarImg/shoppingCar_top.png" />
+			<img src="{% static 'img/shoppingCarImg/shoppingCar_top.png' %}" />
 		</div>
 		<!--<table id="table">
 			<th>

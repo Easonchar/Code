@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
-		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
-		<link rel="stylesheet" href="../css/login.css" />
+		<script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
+		<link rel="stylesheet" href="{% static 'css/login.css' %}" />
 		<script>
 			$(function(){
 				var name = $.cookie("user");
@@ -25,7 +26,7 @@
 						$(this).css({background:"blue"});
 						if(obj.status ==1){
 							alert(obj.msg);
-							location.href = "../index.html";
+							location.href = "/index/";
 							if($(".p4 input").prop("checked")==true){
 								$.cookie("user", userName, {expires:30, path:"/"});
 								$.cookie("psd", passWord, {expires:30, path:"/"});				
@@ -42,7 +43,7 @@
 	<body>
 		<div id="logo">
 			<div class="logobox">
-				<img src="../img/indexImg/logo_v100.png" />
+				<img src="{% static 'img/indexImg/logo_v100.png' %}" />
 			</div>
 		</div>
 		<div id="tip">
@@ -65,16 +66,16 @@
 			<div id="login_right">
 				<div id="login_right_top">
 					<p>没有尚品网账号？</p>
-					<a href="register.html">注册新会员</a>
-					<img src="../img/loginImg/arrow.jpg" />
+					<a href="/register/">注册新会员</a>
+					<img src="{% static 'img/loginImg/arrow.jpg' %}" />
 				</div>
 				<div id="login_right_buttom">
-					<img src="../img/loginImg/login_right_bottom.jpg" />
+					<img src="{% static 'img/loginImg/login_right_bottom.jpg' %}" />
 				</div>
 			</div>
 		</form>
 		<div id="login_foot">
-			<img src="../img/loginImg/login_foot.jpg" />
+			<img src="{% static 'img/loginImg/login_foot.jpg' %}" />
 		</div>
 	</body>
 </html>

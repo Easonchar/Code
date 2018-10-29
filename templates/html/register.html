@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>login</title>
-		<script type="text/javascript" src="../js/ajax.js" ></script>
-		<script type="text/javascript" src="../js/register.js" ></script>
-		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="{% static 'js/ajax.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/register.js' %}" ></script>
+		<link rel="stylesheet" href="{% static 'css/register.css' %}" />
 	</head>
 	<body>
 		<div id="logo">
-			<img src="../img/loginImg/logo_v100.png" />
+			<img src="{% static 'img/loginImg/logo_v100.png' %}" />
 		</div>
 		<form id="form_login">
 			<div class="tip">新用户注册即可领取500元专享礼包</div>
@@ -49,10 +50,10 @@
 				<div id="box1">
 					<p>已有尚品账号：</p>
 					<a href="login.html">直接登陆</a>
-					<img src="../img/loginImg/arrow.jpg" />
+					<img src="{% static 'img/loginImg/arrow.jpg' %}" />
 				</div>
 				<div id="box2">
-					<img src="../img/loginImg/loginBg.jpg" />
+					<img src="{% static 'img/loginImg/loginBg.jpg' %}" />
 				</div>
 			</div>
 		</form>

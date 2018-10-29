@@ -13,7 +13,7 @@ $(function(){
 		
 		//点击首页内容进入进入详情页
 		$("#list2>li,#main_list1>li,#main_list2>li").click(function(){
-			location.href = "html/list.html";
+			location.href = "list/";
 			
 		})
 		
@@ -77,7 +77,7 @@ $(function(){
 			$($(this)).html("客服咨询");
 		})
 		$("#sidebar_list li").eq(0).mouseleave(function(){
-			$($(this)).html("<a href='#'><img src='img/sidebarImg/2.png' /></a>");
+			$($(this)).html("<a href='#'><img src='../img/sidebarImg/2.png' /></a>");
 		})
 		
 		
@@ -88,7 +88,7 @@ $(function(){
 		})
 		
 		$("#sidebar_list li").eq(1).mouseleave(function(){
-			$($(this)).html("<a href='#'><img src='img/sidebarImg/4.png' /></a>");
+			$($(this)).html("<a href='#'><img src='../img/sidebarImg/4.png' /></a>");
 			$("#weixin").css({"display":"none"});
 		})
 		
@@ -98,7 +98,7 @@ $(function(){
 		})
 		
 		$("#sidebar_list li").eq(2).mouseleave(function(){
-			$($(this)).html("<a href='#'><img src='img/sidebarImg/1.png' /></a>");
+			$($(this)).html("<a href='#'><img src='../img/sidebarImg/1.png' /></a>");
 			$("#app").css({"display":"none"});
 		})
 		
@@ -107,12 +107,12 @@ $(function(){
 		})
 		
 		$("#sidebar_list li").eq(3).mouseleave(function(){
-			$($(this)).html("<a href='#'><img src='img/sidebarImg/3.png' /></a>");
+			$($(this)).html("<a href='#'><img src='../img/sidebarImg/3.png' /></a>");
 		})
 		
 		//点击鞋子 进入详情页
 		
 		$("#main_list1>li").eq(0).click(function(){
-			location.href = "html/list.html";
+			location.href = "/list";
 		})
 })
